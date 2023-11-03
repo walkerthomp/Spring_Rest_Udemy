@@ -27,4 +27,9 @@ public class HelloWorldController {
 		return new HelloWorldBean(
 				String.format("Hello world, %s", name));
 	}
+	
+	@GetMapping(path = "/hellow-world-internationalized")
+	public String hellowWorldInternationalized() {
+		return "Hello World V2";
+	}
 }
